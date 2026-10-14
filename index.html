@@ -34,7 +34,7 @@
     <meta name="twitter:image:alt" content="Sergio Ballesteros Engineering Notebook social preview" />
     <title>Sergio Ballesteros | Engineering Notebook</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=20261003-i18n" />
+    <link rel="stylesheet" href="./styles.css?v=20261014-notebook" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -133,6 +133,7 @@
               <div class="identity-copy">
                 <strong>Sergio Ballesteros</strong>
                 <span data-i18n="identity-role">Software Developer</span>
+                <span class="identity-stack">Java · Spring Boot · AWS · Kubernetes</span>
               </div>
             </div>
 
@@ -148,6 +149,7 @@
               <div class="hero-actions">
                 <a class="button button-primary" href="./cv.pdf?v=20260629" data-i18n="hero-cta-cv" data-cv-link="hero">Download CV</a>
                 <a class="button button-secondary" href="#systems" data-i18n="hero-cta-cases">Open case files</a>
+                <a class="case-link" href="./demo/energy-simulator/" data-demo-link data-i18n="energy-demo-launch">Launch interactive demo →</a>
               </div>
             </div>
 
@@ -161,6 +163,137 @@
               </ol>
             </div>
           </div>
+        </section>
+
+        <section class="section-sheet" id="systems">
+          <div class="section-head">
+            <h2 data-i18n="systems-h2">Systems in Production</h2>
+            <p data-i18n="systems-subtitle">Systems I have to keep useful after deployment, not just finish once.</p>
+          </div>
+
+          <div class="casefiles">
+            <div class="casefile is-active" data-project="ocm">
+              <button class="casefile-select" type="button" aria-pressed="true">
+                <span class="casefile-index">
+                  <span class="meta-label" data-i18n="case-001-label">Case 001</span>
+                  <strong>OCM Brain</strong>
+                  <span class="case-status case-status-live" data-i18n="case-001-status">In production</span>
+                  <span class="case-emphasis" data-i18n="case-001-emphasis">Primary dossier</span>
+                  <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
+                </span>
+                <span class="casefile-summary">
+                  <span class="casefile-desc" data-i18n="case-001-desc">Service-backed AI layer for lead scoring, consent checks and sales-facing insight generation.</span>
+                </span>
+              </button>
+              <a class="case-link" href="./notes/ocm-brain.html" data-i18n="case-link">View notebook →</a>
+            </div>
+
+            <div class="casefile" data-project="energy">
+              <button class="casefile-select" type="button" aria-pressed="false">
+                <span class="casefile-index">
+                  <span class="meta-label" data-i18n="case-002-label">Case 002</span>
+                  <strong>Energy Simulator</strong>
+                  <span class="case-status case-status-live" data-i18n="case-002-status">Healthy</span>
+                  <span class="case-emphasis" data-i18n="case-002-emphasis">Core platform</span>
+                  <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
+                </span>
+                <span class="casefile-summary">
+                  <span class="casefile-desc" data-i18n="case-002-desc">Shared simulation backend for tariff scenarios, pricing logic and repeatable commercial analysis.</span>
+                </span>
+              </button>
+              <div class="case-actions">
+                <a class="case-link" href="./notes/energy-simulator.html" data-i18n="case-link">View notebook →</a>
+                <a class="case-link case-demo-link" href="./demo/energy-simulator/" data-i18n="energy-demo-launch">Launch interactive demo →</a>
+              </div>
+            </div>
+
+            <div class="casefile" data-project="ocr">
+              <button class="casefile-select" type="button" aria-pressed="false">
+                <span class="casefile-index">
+                  <span class="meta-label" data-i18n="case-003-label">Case 003</span>
+                  <strong>Smart OCR</strong>
+                  <span class="case-status case-status-live" data-i18n="case-003-status">Automated</span>
+                  <span class="case-emphasis" data-i18n="case-003-emphasis">AI workflow</span>
+                  <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
+                </span>
+                <span class="casefile-summary">
+                  <span class="casefile-desc" data-i18n="case-003-desc">Pipeline that turns energy invoices into validated structured data using OCR, an LLM and schema validation.</span>
+                </span>
+              </button>
+              <a class="case-link" href="./notes/smart-ocr.html" data-i18n="case-link">View notebook →</a>
+            </div>
+
+            <div class="casefile" data-project="data">
+              <button class="casefile-select" type="button" aria-pressed="false">
+                <span class="casefile-index">
+                  <span class="meta-label" data-i18n="case-004-label">Case 004</span>
+                  <strong>Data Processing</strong>
+                  <span class="case-status case-status-live" data-i18n="case-004-status">Active</span>
+                  <span class="case-emphasis" data-i18n="case-004-emphasis">Data operations</span>
+                  <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
+                </span>
+                <span class="casefile-summary">
+                  <span class="casefile-desc" data-i18n="case-004-desc">Import and cleanup workflows built to survive large batches, bad encoding and reruns.</span>
+                </span>
+              </button>
+              <a class="case-link" href="./notes/data-processing.html" data-i18n="case-link">View notebook →</a>
+            </div>
+          </div>
+
+          <article class="record-sheet" id="record-sheet" aria-live="polite">
+            <div class="record-head">
+              <div>
+                <span class="meta-label" id="project-case">Case 001</span>
+                <h3 id="project-title">OCM Brain</h3>
+                <p id="project-description">
+                  Service-backed AI layer for lead scoring, consent checks and sales-facing insight generation.
+                </p>
+              </div>
+              <div class="record-status-wrap">
+                <span class="case-status case-status-live" id="project-status">In production</span>
+              </div>
+            </div>
+
+            <div class="record-story">
+              <div class="story-step">
+                <span class="meta-label" data-i18n="dt-problem">Problem</span>
+                <p id="project-problem"></p>
+              </div>
+              <div class="story-step">
+                <span class="meta-label" data-i18n="story-solution">Solution</span>
+                <p id="project-solution"></p>
+              </div>
+              <div class="story-step">
+                <span class="meta-label" data-i18n="story-value">Business value</span>
+                <p id="project-value"></p>
+              </div>
+            </div>
+
+            <span class="meta-label record-details-label" data-i18n="story-details">Engineering details</span>
+            <div class="record-grid">
+              <div class="record-card">
+                <span class="meta-label" data-i18n="record-label-mission">Mission</span>
+                <p id="project-mission">Run commercial scoring and decision support inside stable backend workflows.</p>
+              </div>
+              <div class="record-card">
+                <span class="meta-label" data-i18n="record-label-stack">Current Stack</span>
+                <div class="chip-row" id="project-stack"></div>
+              </div>
+              </div>
+            </div>
+
+            <div class="notes-row">
+              <div>
+                <span class="meta-label" data-i18n="record-label-notes">Notebook Notes</span>
+                <ul id="project-notes"></ul>
+              </div>
+              <div class="record-actions">
+                <span class="record-callout" id="project-callout">Featured system dossier</span>
+                <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
+                <a class="record-link" id="project-link" href="./notes/ocm-brain.html" data-i18n="record-link">Architecture &amp; source</a>
+              </div>
+            </div>
+          </article>
         </section>
 
         <section class="section-sheet help-sheet" id="help">
@@ -191,165 +324,6 @@
               <p data-i18n="help-04-p">Build internal tools, APIs, dashboards and systems around specific business requirements.</p>
             </article>
           </div>
-        </section>
-
-        <section class="section-sheet" id="systems">
-          <div class="section-head">
-            <h2 data-i18n="systems-h2">Systems in Production</h2>
-            <p data-i18n="systems-subtitle">Systems I have to keep useful after deployment, not just finish once.</p>
-          </div>
-
-          <div class="casefiles">
-            <div class="casefile is-active" data-project="ocm">
-              <button class="casefile-select" type="button" aria-pressed="true">
-                <span class="casefile-index">
-                  <span class="meta-label" data-i18n="case-001-label">Case 001</span>
-                  <strong>OCM Brain</strong>
-                  <span class="case-status case-status-live" data-i18n="case-001-status">In production</span>
-                  <span class="case-emphasis" data-i18n="case-001-emphasis">Primary dossier</span>
-                  <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
-                </span>
-                <span class="casefile-summary">
-                  <span class="casefile-desc" data-i18n="case-001-desc">Service-backed AI layer for lead scoring, consent checks and sales-facing insight generation.</span>
-                  <span class="case-meta">
-                    <span data-i18n="case-001-metric-1">Evidence 12</span>
-                    <span data-i18n="case-001-metric-2">MRs 4</span>
-                    <span data-i18n="case-001-metric-3">Diagrams 3</span>
-                    <span data-i18n="case-001-metric-4">Updated 29 Sep</span>
-                  </span>
-                </span>
-              </button>
-              <a class="case-link" href="./notes/ocm-brain.html" data-i18n="case-link">View notebook →</a>
-            </div>
-
-            <div class="casefile" data-project="energy">
-              <button class="casefile-select" type="button" aria-pressed="false">
-                <span class="casefile-index">
-                  <span class="meta-label" data-i18n="case-002-label">Case 002</span>
-                  <strong>Energy Simulator</strong>
-                  <span class="case-status case-status-live" data-i18n="case-002-status">Healthy</span>
-                  <span class="case-emphasis" data-i18n="case-002-emphasis">Core platform</span>
-                  <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
-                </span>
-                <span class="casefile-summary">
-                  <span class="casefile-desc" data-i18n="case-002-desc">Shared simulation backend for tariff scenarios, pricing logic and repeatable commercial analysis.</span>
-                  <span class="case-meta">
-                    <span data-i18n="case-002-metric-1">Evidence 9</span>
-                    <span data-i18n="case-002-metric-2">MRs 2</span>
-                    <span data-i18n="case-002-metric-3">Flows 3</span>
-                    <span data-i18n="case-002-metric-4">Updated 29 Sep</span>
-                  </span>
-                </span>
-              </button>
-              <div class="case-actions">
-                <a class="case-link" href="./notes/energy-simulator.html" data-i18n="case-link">View notebook →</a>
-                <a class="case-link case-demo-link" href="./demo/energy-simulator/" data-i18n="energy-demo-launch">Launch interactive demo →</a>
-              </div>
-            </div>
-
-            <div class="casefile" data-project="ocr">
-              <button class="casefile-select" type="button" aria-pressed="false">
-                <span class="casefile-index">
-                  <span class="meta-label" data-i18n="case-003-label">Case 003</span>
-                  <strong>Smart OCR</strong>
-                  <span class="case-status case-status-live" data-i18n="case-003-status">Automated</span>
-                  <span class="case-emphasis" data-i18n="case-003-emphasis">AI workflow</span>
-                  <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
-                </span>
-                <span class="casefile-summary">
-                  <span class="casefile-desc" data-i18n="case-003-desc">Pipeline that turns energy invoices into validated structured data using OCR, an LLM and schema validation.</span>
-                  <span class="case-meta">
-                    <span data-i18n="case-003-metric-1">Evidence 8</span>
-                    <span data-i18n="case-003-metric-2">MRs 2</span>
-                    <span data-i18n="case-003-metric-3">Checks 5</span>
-                    <span data-i18n="case-003-metric-4">Updated 29 Sep</span>
-                  </span>
-                </span>
-              </button>
-              <a class="case-link" href="./notes/smart-ocr.html" data-i18n="case-link">View notebook →</a>
-            </div>
-
-            <div class="casefile" data-project="data">
-              <button class="casefile-select" type="button" aria-pressed="false">
-                <span class="casefile-index">
-                  <span class="meta-label" data-i18n="case-004-label">Case 004</span>
-                  <strong>Data Processing</strong>
-                  <span class="case-status case-status-live" data-i18n="case-004-status">Active</span>
-                  <span class="case-emphasis" data-i18n="case-004-emphasis">Data operations</span>
-                  <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
-                </span>
-                <span class="casefile-summary">
-                  <span class="casefile-desc" data-i18n="case-004-desc">Import and cleanup workflows built to survive large batches, bad encoding and reruns.</span>
-                  <span class="case-meta">
-                    <span data-i18n="case-004-metric-1">Evidence 11</span>
-                    <span data-i18n="case-004-metric-2">MRs 3</span>
-                    <span data-i18n="case-004-metric-3">Queries 7</span>
-                    <span data-i18n="case-004-metric-4">Updated 29 Sep</span>
-                  </span>
-                </span>
-              </button>
-              <a class="case-link" href="./notes/data-processing.html" data-i18n="case-link">View notebook →</a>
-            </div>
-          </div>
-
-          <article class="record-sheet" id="record-sheet" aria-live="polite">
-            <div class="record-head">
-              <div>
-                <span class="meta-label" id="project-case">Case 001</span>
-                <h3 id="project-title">OCM Brain</h3>
-                <p id="project-description">
-                  Service-backed AI layer for lead scoring, consent checks and sales-facing insight generation.
-                </p>
-              </div>
-              <div class="record-status-wrap">
-                <span class="case-status case-status-live" id="project-status">In production</span>
-                <span class="record-version" id="project-version">Version 1.8</span>
-              </div>
-            </div>
-
-            <div class="record-story">
-              <div class="story-step">
-                <span class="meta-label" data-i18n="dt-problem">Problem</span>
-                <p id="project-problem"></p>
-              </div>
-              <div class="story-step">
-                <span class="meta-label" data-i18n="story-solution">Solution</span>
-                <p id="project-solution"></p>
-              </div>
-              <div class="story-step">
-                <span class="meta-label" data-i18n="story-value">Business value</span>
-                <p id="project-value"></p>
-              </div>
-            </div>
-
-            <span class="meta-label record-details-label" data-i18n="story-details">Engineering details</span>
-            <div class="record-grid">
-              <div class="record-card">
-                <span class="meta-label" data-i18n="record-label-mission">Mission</span>
-                <p id="project-mission">Run commercial scoring and decision support inside stable backend workflows.</p>
-              </div>
-              <div class="record-card">
-                <span class="meta-label" data-i18n="record-label-stack">Current Stack</span>
-                <div class="chip-row" id="project-stack"></div>
-              </div>
-              <div class="record-card">
-                <span class="meta-label" data-i18n="record-label-evidence">Evidence Count</span>
-                <div class="record-stats" id="project-evidence"></div>
-              </div>
-            </div>
-
-            <div class="notes-row">
-              <div>
-                <span class="meta-label" data-i18n="record-label-notes">Notebook Notes</span>
-                <ul id="project-notes"></ul>
-              </div>
-              <div class="record-actions">
-                <span class="record-callout" id="project-callout">Featured system dossier</span>
-                <span class="privacy-badge" data-i18n="privacy-badge-professional">Professional work · private code</span>
-                <a class="record-link" id="project-link" href="./notes/ocm-brain.html" data-i18n="record-link">Architecture &amp; source</a>
-              </div>
-            </div>
-          </article>
         </section>
 
         <section class="section-sheet decisions-sheet" id="decisions">
@@ -638,7 +612,7 @@
       </main>
     </div>
 
-    <script src="./translations.js?v=20261003-i18n"></script>
-    <script src="./main.js?v=20261003-i18n"></script>
+    <script src="./translations.js?v=20261014-notebook"></script>
+    <script src="./main.js?v=20261014-notebook"></script>
   </body>
 </html>
