@@ -75,7 +75,7 @@ As a technical reviewer clicking gen-fraud-graph, I want the link to open the ac
 Point the gen-fraud-graph link to the correct upstream OSS repo.
 
 **Context**
-The current href is `https://github.com/sergioballesteros-vd/gen-fraud-graph`. This repo belongs to Santander, not Sergio. Sergio has contributed PRs to it. The link should point to the Santander organization repo. The correct URL needs to be confirmed before this task can be closed.
+The current href is `https://github.com/sergioballesteros-dev/gen-fraud-graph`. This repo belongs to Santander, not Sergio. Sergio has contributed PRs to it. The link should point to the Santander organization repo. The correct URL needs to be confirmed before this task can be closed.
 
 **Scope**
 In: Update the `href` on the gen-fraud-graph `.repo-link` in index.html to the correct Santander upstream URL.

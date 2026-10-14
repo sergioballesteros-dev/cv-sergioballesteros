@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Static personal site for Sergio Ballesteros — framed as an **Engineering Notebook**, not a CV template. No build system, no framework, no package.json. Pure HTML/CSS/JS served directly.
 
-Deployed via GitHub Pages (`sergioballesteros-vd.github.io/cv-sergioballesteros`).
+Deployed via GitHub Pages (`sergioballesteros-dev.github.io/cv-sergioballesteros`).
 
 ## Development
 

@@ -266,7 +266,7 @@ const noteEs = {
       "El tratamiento documental se acercó más a un workflow backend real que a un paso manual de revisión.",
     ], sections[7].querySelectorAll(".entry-card")[1]);
     setAll("h2", ["Evidencia del repositorio público", "Lectura operativa"], sections[8]);
-    setText("p", "Este workflow también existe como artefacto técnico público: <a href=\"https://github.com/sergioballesteros-vd/smart-document-extractor\" target=\"_blank\" rel=\"noreferrer\">smart-document-extractor</a>.", sections[8].querySelectorAll(".entry-card")[0]);
+    setText("p", "Este workflow también existe como artefacto técnico público: <a href=\"https://github.com/sergioballesteros-dev/smart-document-extractor\" target=\"_blank\" rel=\"noreferrer\">smart-document-extractor</a>.", sections[8].querySelectorAll(".entry-card")[0]);
     setAll(".entry-bullets li", [
       "Stack público verificado: Python, FastAPI, Pydantic, Docker.",
       "Los endpoints públicos verificados incluyen `GET /api/health` y `POST /api/extract`.",

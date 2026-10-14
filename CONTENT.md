@@ -75,7 +75,7 @@ Use this as the canonical source for copy, structure, and prioritization.
 - Description: Full-stack product running in production, with real tests, CI/CD and safe, tested, reversible deploys. The deploy pipeline backs up the database before every migration.
 - Stack: Next.js · Prisma · Vitest · Playwright
 - Primary CTA: Visit ketohoy.es ↗ — https://ketohoy.es
-- Secondary CTA: View source ↗ — https://github.com/sergioballesteros-vd/ketohoy
+- Secondary CTA: View source ↗ — https://github.com/sergioballesteros-dev/ketohoy
 
 ### Energy Simulator
 
@@ -168,7 +168,7 @@ Use this as the canonical source for copy, structure, and prioritization.
 
 ## Links
 
-- GitHub: https://github.com/sergioballesteros-vd
+- GitHub: https://github.com/sergioballesteros-dev
 - LinkedIn: https://linkedin.com/in/sergio-ballesteros-dev
 - Email: mailto:sergioabch@icloud.com
 - CV: /cv.pdf
