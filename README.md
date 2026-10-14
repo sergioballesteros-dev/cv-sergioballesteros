@@ -9,7 +9,7 @@ Sitio personal estático centrado en sistemas, decisiones y pruebas de trabajo d
 - `notes/`, `journal/`, `notes-lang.js`: expedientes y notas técnicas.
 - `demo/energy-simulator/`: demo pública con datos sintéticos y extracción simulada; no es la plataforma privada de producción.
 - `CONTENT.md`: inventario de contenido y posicionamiento.
-- `tests/`: regresión de la persistencia del idioma.
+- `tests/`: regresiones de persistencia del idioma y estructura del DOM.
 
 Las fichas enlazan las notas y pruebas públicas disponibles. No se publican contadores ni versiones de sistemas privados sin un registro consultable.
 
@@ -24,6 +24,10 @@ python3 -m http.server 4173 --bind 127.0.0.1
 Abre http://127.0.0.1:4173/ (o `/?lang=es`). No se necesita framework, compilación ni dependencias para servir el sitio.
 
 ## Comprobaciones
+
+Con el servidor local activo, abre `http://127.0.0.1:4173/tests/structure.html`.
+Debe mostrar `PASS`: comprueba con el parser HTML del navegador que las notas
+permanecen en el expediente y todas las secciones principales dentro del cuaderno.
 
 Con Node 22+:
 

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <title>Notebook DOM structure regression</title>
+  <pre id="result">Running…</pre>
+  <script type="module">
+    const result = document.getElementById("result");
+    try {
+      const response = await fetch("../index.html", { cache: "no-store" });
+      if (!response.ok) throw new Error(`index.html: ${response.status}`);
+      const doc = new DOMParser().parseFromString(await response.text(), "text/html");
+      if (!doc.querySelector("#record-sheet > .notes-row")) {
+        throw new Error("Notebook notes must remain inside #record-sheet");
+      }
+      for (const id of ["overview", "systems", "help", "decisions", "evidence", "journal", "proof", "contact"]) {
+        if (!doc.querySelector(`.notebook-shell > main.notebook-page > section#${id}`)) {
+          throw new Error(`#${id} must remain inside main and the notebook`);
+        }
+      }
+      result.textContent = "PASS: notes and all main sections are inside the notebook";
+    } catch (error) {
+      result.textContent = `FAIL: ${error.message}`;
+      throw error;
+    }
+  </script>
+</html>
